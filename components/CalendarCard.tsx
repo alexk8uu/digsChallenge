@@ -34,7 +34,7 @@ const CalendarCard = (props: CalendarCardProps) => {
       </View>
     );
   }
-  console.log(`action?.status:${action?.status}`);
+
   return (
     <View
       style={[styles.rowItems, { alignItems: "flex-start", width: "100%" }]}
