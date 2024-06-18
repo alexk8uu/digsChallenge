@@ -34,7 +34,7 @@ const CalendarCard = (props: CalendarCardProps) => {
       </View>
     );
   }
-
+  console.log(`action?.status:${action?.status}`);
   return (
     <View
       style={[styles.rowItems, { alignItems: "flex-start", width: "100%" }]}
@@ -51,10 +51,11 @@ const CalendarCard = (props: CalendarCardProps) => {
           <ThemedText style={{ fontSize: 18, fontWeight: "bold" }}>
             {dayNumber}
           </ThemedText>
+
           {action?.status === "Completed" ? (
-            <CheckCircleIcon color={"00B47D"} size={24} />
+            <CheckCircleIcon color={"#00B47D"} size={24} />
           ) : (
-            <ClockIcon color={"00B47D"} size={24} />
+            <ClockIcon color={"#00B47D"} size={24} />
           )}
         </View>
       )}
